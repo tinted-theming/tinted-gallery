@@ -1,0 +1,12 @@
+#base24-night-lion-v1 pre { white-space: pre-wrap; font-family: monospace; color: #a1a1a1; background-color: #000000; }
+#base24-night-lion-v1 pre { font-family: monospace; color: #a1a1a1; background-color: #000000; }
+#base24-night-lion-v1 * { font-size: 1em; }
+#base24-night-lion-v1 .Identifier { color: #a1a1a1; }
+#base24-night-lion-v1 .Statement { color: #bb00bb; font-weight: bold; }
+#base24-night-lion-v1 .PreProc { color: #00d9df; }
+#base24-night-lion-v1 .Operator { color: #00d9df; }
+#base24-night-lion-v1 .Comment { color: #6e6e6e; font-style: italic; }
+#base24-night-lion-v1 .String { color: #5ede8f; font-style: italic; }
+#base24-night-lion-v1 .Number { color: #f2f067; }
+#base24-night-lion-v1 .Function { color: #266ad7; }
+#base24-night-lion-v1 .Conditional { color: #bb00bb; }

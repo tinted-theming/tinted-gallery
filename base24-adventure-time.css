@@ -1,0 +1,12 @@
+#base24-adventure-time pre { white-space: pre-wrap; font-family: monospace; color: #cdc3bf; background-color: #1e1c44; }
+#base24-adventure-time pre { font-family: monospace; color: #cdc3bf; background-color: #1e1c44; }
+#base24-adventure-time * { font-size: 1em; }
+#base24-adventure-time .Identifier { color: #cdc3bf; }
+#base24-adventure-time .Statement { color: #665992; font-weight: bold; }
+#base24-adventure-time .PreProc { color: #6fa497; }
+#base24-adventure-time .Operator { color: #6fa497; }
+#base24-adventure-time .Comment { color: #7893bf; font-style: italic; }
+#base24-adventure-time .String { color: #49b117; font-style: italic; }
+#base24-adventure-time .Number { color: #e6741d; }
+#base24-adventure-time .Function { color: #0f49c6; }
+#base24-adventure-time .Conditional { color: #665992; }

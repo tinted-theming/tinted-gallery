@@ -1,0 +1,12 @@
+#base24-the-hulk pre { white-space: pre-wrap; font-family: monospace; color: #b6b6b1; background-color: #1b1d1e; }
+#base24-the-hulk pre { font-family: monospace; color: #b6b6b1; background-color: #1b1d1e; }
+#base24-the-hulk * { font-size: 1em; }
+#base24-the-hulk .Identifier { color: #b6b6b1; }
+#base24-the-hulk .Statement { color: #641e73; font-weight: bold; }
+#base24-the-hulk .PreProc { color: #378ca9; }
+#base24-the-hulk .Operator { color: #378ca9; }
+#base24-the-hulk .Comment { color: #727473; font-style: italic; }
+#base24-the-hulk .String { color: #13ce2f; font-style: italic; }
+#base24-the-hulk .Number { color: #62e456; }
+#base24-the-hulk .Function { color: #2424f4; }
+#base24-the-hulk .Conditional { color: #641e73; }

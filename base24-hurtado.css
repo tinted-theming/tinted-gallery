@@ -1,0 +1,12 @@
+#base24-hurtado pre { white-space: pre-wrap; font-family: monospace; color: #a1a1a1; background-color: #000000; }
+#base24-hurtado pre { font-family: monospace; color: #a1a1a1; background-color: #000000; }
+#base24-hurtado * { font-size: 1em; }
+#base24-hurtado .Identifier { color: #a1a1a1; }
+#base24-hurtado .Statement { color: #fc5ef0; font-weight: bold; }
+#base24-hurtado .PreProc { color: #85e9fe; }
+#base24-hurtado .Operator { color: #85e9fe; }
+#base24-hurtado .Comment { color: #4e4e4e; font-style: italic; }
+#base24-hurtado .String { color: #a5df55; font-style: italic; }
+#base24-hurtado .Number { color: #fbe74a; }
+#base24-hurtado .Function { color: #486387; }
+#base24-hurtado .Conditional { color: #fc5ef0; }

@@ -1,0 +1,12 @@
+#base24-jet-brains-darcula pre { white-space: pre-wrap; font-family: monospace; color: #979797; background-color: #202020; }
+#base24-jet-brains-darcula pre { font-family: monospace; color: #979797; background-color: #202020; }
+#base24-jet-brains-darcula * { font-size: 1em; }
+#base24-jet-brains-darcula .Identifier { color: #979797; }
+#base24-jet-brains-darcula .Statement { color: #fa54ff; font-weight: bold; }
+#base24-jet-brains-darcula .PreProc { color: #33c2c1; }
+#base24-jet-brains-darcula .Operator { color: #33c2c1; }
+#base24-jet-brains-darcula .Comment { color: #6b6b6b; font-style: italic; }
+#base24-jet-brains-darcula .String { color: #126e00; font-style: italic; }
+#base24-jet-brains-darcula .Number { color: #c2c300; }
+#base24-jet-brains-darcula .Function { color: #4581eb; }
+#base24-jet-brains-darcula .Conditional { color: #fa54ff; }

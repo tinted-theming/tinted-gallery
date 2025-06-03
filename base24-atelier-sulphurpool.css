@@ -1,0 +1,12 @@
+#base24-atelier-sulphurpool pre { white-space: pre-wrap; font-family: monospace; color: #8c92ac; background-color: #202746; }
+#base24-atelier-sulphurpool pre { font-family: monospace; color: #8c92ac; background-color: #202746; }
+#base24-atelier-sulphurpool * { font-size: 1em; }
+#base24-atelier-sulphurpool .Identifier { color: #8c92ac; }
+#base24-atelier-sulphurpool .Statement { color: #6679cc; font-weight: bold; }
+#base24-atelier-sulphurpool .PreProc { color: #22a2c9; }
+#base24-atelier-sulphurpool .Operator { color: #22a2c9; }
+#base24-atelier-sulphurpool .Comment { color: #767d9c; font-style: italic; }
+#base24-atelier-sulphurpool .String { color: #ac9739; font-style: italic; }
+#base24-atelier-sulphurpool .Number { color: #c08b30; }
+#base24-atelier-sulphurpool .Function { color: #3d8fd1; }
+#base24-atelier-sulphurpool .Conditional { color: #6679cc; }

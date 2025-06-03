@@ -1,0 +1,12 @@
+#base24-laser pre { white-space: pre-wrap; font-family: monospace; color: #d8d8d8; background-color: #030d18; }
+#base24-laser pre { font-family: monospace; color: #d8d8d8; background-color: #030d18; }
+#base24-laser * { font-size: 1em; }
+#base24-laser .Identifier { color: #d8d8d8; }
+#base24-laser .Statement { color: #ff8ffd; font-weight: bold; }
+#base24-laser .PreProc { color: #d0d1fe; }
+#base24-laser .Operator { color: #d0d1fe; }
+#base24-laser .Comment { color: #a6a6a6; font-style: italic; }
+#base24-laser .String { color: #b4fa72; font-style: italic; }
+#base24-laser .Number { color: #09b4bd; }
+#base24-laser .Function { color: #fed300; }
+#base24-laser .Conditional { color: #ff8ffd; }

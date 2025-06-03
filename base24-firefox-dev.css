@@ -1,0 +1,12 @@
+#base24-firefox-dev pre { white-space: pre-wrap; font-family: monospace; color: #a5acae; background-color: #0e1011; }
+#base24-firefox-dev pre { font-family: monospace; color: #a5acae; background-color: #0e1011; }
+#base24-firefox-dev * { font-size: 1em; }
+#base24-firefox-dev .Identifier { color: #a5acae; }
+#base24-firefox-dev .Statement { color: #d75cff; font-weight: bold; }
+#base24-firefox-dev .PreProc { color: #4b73a2; }
+#base24-firefox-dev .Operator { color: #4b73a2; }
+#base24-firefox-dev .Comment { color: #374d53; font-style: italic; }
+#base24-firefox-dev .String { color: #5eb83c; font-style: italic; }
+#base24-firefox-dev .Number { color: #a57705; }
+#base24-firefox-dev .Function { color: #359ddf; }
+#base24-firefox-dev .Conditional { color: #d75cff; }

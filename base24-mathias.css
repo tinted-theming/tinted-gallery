@@ -1,0 +1,12 @@
+#base24-mathias pre { white-space: pre-wrap; font-family: monospace; color: #cacaca; background-color: #000000; }
+#base24-mathias pre { font-family: monospace; color: #cacaca; background-color: #000000; }
+#base24-mathias * { font-size: 1em; }
+#base24-mathias .Identifier { color: #cacaca; }
+#base24-mathias .Statement { color: #fa2573; font-weight: bold; }
+#base24-mathias .PreProc { color: #67d9f0; }
+#base24-mathias .Operator { color: #67d9f0; }
+#base24-mathias .Comment { color: #7c7c7c; font-style: italic; }
+#base24-mathias .String { color: #a6e32d; font-style: italic; }
+#base24-mathias .Number { color: #fc951e; }
+#base24-mathias .Function { color: #c48dff; }
+#base24-mathias .Conditional { color: #fa2573; }

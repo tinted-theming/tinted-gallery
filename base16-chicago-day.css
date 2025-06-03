@@ -1,0 +1,12 @@
+#base16-chicago-day pre { white-space: pre-wrap; font-family: monospace; color: #364c40; background-color: #e8f0ea; }
+#base16-chicago-day pre { font-family: monospace; color: #364c40; background-color: #e8f0ea; }
+#base16-chicago-day * { font-size: 1em; }
+#base16-chicago-day .Identifier { color: #364c40; }
+#base16-chicago-day .Statement { color: #e27ea6; font-weight: bold; }
+#base16-chicago-day .PreProc { color: #00a1de; }
+#base16-chicago-day .Operator { color: #00a1de; }
+#base16-chicago-day .Comment { color: #8a9a91; font-style: italic; }
+#base16-chicago-day .String { color: #009b3a; font-style: italic; }
+#base16-chicago-day .Number { color: #f9461c; }
+#base16-chicago-day .Function { color: #522398; }
+#base16-chicago-day .Conditional { color: #e27ea6; }

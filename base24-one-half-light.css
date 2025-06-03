@@ -1,0 +1,12 @@
+#base24-one-half-light pre { white-space: pre-wrap; font-family: monospace; color: #cfd0d2; background-color: #fafafa; }
+#base24-one-half-light pre { font-family: monospace; color: #cfd0d2; background-color: #fafafa; }
+#base24-one-half-light * { font-size: 1em; }
+#base24-one-half-light .Identifier { color: #cfd0d2; }
+#base24-one-half-light .Statement { color: #a625a4; font-weight: bold; }
+#base24-one-half-light .PreProc { color: #0996b3; }
+#base24-one-half-light .Operator { color: #0996b3; }
+#base24-one-half-light .Comment { color: #797c84; font-style: italic; }
+#base24-one-half-light .String { color: #4fa14f; font-style: italic; }
+#base24-one-half-light .Number { color: #c08400; }
+#base24-one-half-light .Function { color: #0084bc; }
+#base24-one-half-light .Conditional { color: #a625a4; }

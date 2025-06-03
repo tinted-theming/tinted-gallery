@@ -1,0 +1,12 @@
+#base24-treehouse pre { white-space: pre-wrap; font-family: monospace; color: #695d47; background-color: #191919; }
+#base24-treehouse pre { font-family: monospace; color: #695d47; background-color: #191919; }
+#base24-treehouse * { font-size: 1em; }
+#base24-treehouse .Identifier { color: #695d47; }
+#base24-treehouse .Statement { color: #96363c; font-weight: bold; }
+#base24-treehouse .PreProc { color: #b2591d; }
+#base24-treehouse .Operator { color: #b2591d; }
+#base24-treehouse .Comment { color: #4f4330; font-style: italic; }
+#base24-treehouse .String { color: #44a900; font-style: italic; }
+#base24-treehouse .Number { color: #a9810b; }
+#base24-treehouse .Function { color: #578499; }
+#base24-treehouse .Conditional { color: #96363c; }

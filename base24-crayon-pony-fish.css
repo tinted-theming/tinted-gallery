@@ -1,0 +1,12 @@
+#base24-crayon-pony-fish pre { white-space: pre-wrap; font-family: monospace; color: #5d484e; background-color: #140607; }
+#base24-crayon-pony-fish pre { font-family: monospace; color: #5d484e; background-color: #140607; }
+#base24-crayon-pony-fish * { font-size: 1em; }
+#base24-crayon-pony-fish .Identifier { color: #5d484e; }
+#base24-crayon-pony-fish .Statement { color: #682e50; font-weight: bold; }
+#base24-crayon-pony-fish .PreProc { color: #e8a766; }
+#base24-crayon-pony-fish .Operator { color: #e8a766; }
+#base24-crayon-pony-fish .Comment { color: #473438; font-style: italic; }
+#base24-crayon-pony-fish .String { color: #579523; font-style: italic; }
+#base24-crayon-pony-fish .Number { color: #aa301b; }
+#base24-crayon-pony-fish .Function { color: #8b87af; }
+#base24-crayon-pony-fish .Conditional { color: #682e50; }

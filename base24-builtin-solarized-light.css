@@ -1,0 +1,12 @@
+#base24-builtin-solarized-light pre { white-space: pre-wrap; font-family: monospace; color: #b2b8ad; background-color: #fdf6e3; }
+#base24-builtin-solarized-light pre { font-family: monospace; color: #b2b8ad; background-color: #fdf6e3; }
+#base24-builtin-solarized-light * { font-size: 1em; }
+#base24-builtin-solarized-light .Identifier { color: #b2b8ad; }
+#base24-builtin-solarized-light .Statement { color: #d33682; font-weight: bold; }
+#base24-builtin-solarized-light .PreProc { color: #2aa198; }
+#base24-builtin-solarized-light .Operator { color: #2aa198; }
+#base24-builtin-solarized-light .Comment { color: #3b5a5d; font-style: italic; }
+#base24-builtin-solarized-light .String { color: #859900; font-style: italic; }
+#base24-builtin-solarized-light .Number { color: #b58900; }
+#base24-builtin-solarized-light .Function { color: #268bd2; }
+#base24-builtin-solarized-light .Conditional { color: #d33682; }

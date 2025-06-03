@@ -1,0 +1,12 @@
+#base24-fideloper pre { white-space: pre-wrap; font-family: monospace; color: #b1b1a3; background-color: #282f32; }
+#base24-fideloper pre { font-family: monospace; color: #b1b1a3; background-color: #282f32; }
+#base24-fideloper * { font-size: 1em; }
+#base24-fideloper .Identifier { color: #b1b1a3; }
+#base24-fideloper .Statement { color: #c0226e; font-weight: bold; }
+#base24-fideloper .PreProc { color: #309185; }
+#base24-fideloper .Operator { color: #309185; }
+#base24-fideloper .Comment { color: #415050; font-style: italic; }
+#base24-fideloper .String { color: #edb7ab; font-style: italic; }
+#base24-fideloper .Number { color: #b7aa9a; }
+#base24-fideloper .Function { color: #2e78c1; }
+#base24-fideloper .Conditional { color: #c0226e; }
