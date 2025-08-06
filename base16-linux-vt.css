@@ -1,0 +1,12 @@
+#base16-linux-vt pre { white-space: pre-wrap; font-family: monospace; color: #aaaaaa; background-color: #000000; }
+#base16-linux-vt pre { font-family: monospace; color: #aaaaaa; background-color: #000000; }
+#base16-linux-vt * { font-size: 1em; }
+#base16-linux-vt .Identifier { color: #aaaaaa; }
+#base16-linux-vt .Statement { color: #ff55ff; font-weight: bold; }
+#base16-linux-vt .PreProc { color: #00aaaa; }
+#base16-linux-vt .Operator { color: #00aaaa; }
+#base16-linux-vt .Comment { color: #555555; font-style: italic; }
+#base16-linux-vt .String { color: #00aa00; font-style: italic; }
+#base16-linux-vt .Number { color: #ff5555; }
+#base16-linux-vt .Function { color: #5555ff; }
+#base16-linux-vt .Conditional { color: #ff55ff; }
