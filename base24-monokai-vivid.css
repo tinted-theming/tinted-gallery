@@ -5,8 +5,8 @@
 #base24-monokai-vivid .Statement { color: #f800f8; font-weight: bold; }
 #base24-monokai-vivid .PreProc { color: #01b6ed; }
 #base24-monokai-vivid .Operator { color: #01b6ed; }
-#base24-monokai-vivid .Comment { color: #a1a1a1; font-style: italic; }
+#base24-monokai-vivid .Comment { color: #525252; font-style: italic; }
 #base24-monokai-vivid .String { color: #97e123; font-style: italic; }
-#base24-monokai-vivid .Number { color: #fef20a; }
+#base24-monokai-vivid .Number { color: #fec50a; }
 #base24-monokai-vivid .Function { color: #0442fe; }
 #base24-monokai-vivid .Conditional { color: #f800f8; }

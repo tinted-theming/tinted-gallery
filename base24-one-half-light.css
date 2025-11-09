@@ -1,5 +1,5 @@
-#base24-one-half-light pre { white-space: pre-wrap; font-family: monospace; color: #cfd0d2; background-color: #fafafa; }
-#base24-one-half-light pre { font-family: monospace; color: #cfd0d2; background-color: #fafafa; }
+#base24-one-half-light pre { white-space: pre-wrap; font-family: monospace; color: #cfd0d2; background-color: #2a2b32; }
+#base24-one-half-light pre { font-family: monospace; color: #cfd0d2; background-color: #2a2b32; }
 #base24-one-half-light * { font-size: 1em; }
 #base24-one-half-light .Identifier { color: #cfd0d2; }
 #base24-one-half-light .Statement { color: #a625a4; font-weight: bold; }
