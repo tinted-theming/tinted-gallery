@@ -1,0 +1,12 @@
+#base24-flexoki-light pre { white-space: pre-wrap; font-family: monospace; color: #403e3c; background-color: #fffcf0; }
+#base24-flexoki-light pre { font-family: monospace; color: #403e3c; background-color: #fffcf0; }
+#base24-flexoki-light * { font-size: 1em; }
+#base24-flexoki-light .Identifier { color: #403e3c; }
+#base24-flexoki-light .Statement { color: #5e409d; font-weight: bold; }
+#base24-flexoki-light .PreProc { color: #24837b; }
+#base24-flexoki-light .Operator { color: #24837b; }
+#base24-flexoki-light .Comment { color: #cecdc3; font-style: italic; }
+#base24-flexoki-light .String { color: #66800b; font-style: italic; }
+#base24-flexoki-light .Number { color: #bc5215; }
+#base24-flexoki-light .Function { color: #205ea6; }
+#base24-flexoki-light .Conditional { color: #5e409d; }
