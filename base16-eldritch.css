@@ -1,0 +1,12 @@
+#base16-eldritch pre { white-space: pre-wrap; font-family: monospace; color: #ebfafa; background-color: #212337; }
+#base16-eldritch pre { font-family: monospace; color: #ebfafa; background-color: #212337; }
+#base16-eldritch * { font-size: 1em; }
+#base16-eldritch .Identifier { color: #ebfafa; }
+#base16-eldritch .Statement { color: #a48cf2; font-weight: bold; }
+#base16-eldritch .PreProc { color: #04d1f9; }
+#base16-eldritch .Operator { color: #04d1f9; }
+#base16-eldritch .Comment { color: #7081d0; font-style: italic; }
+#base16-eldritch .String { color: #37f499; font-style: italic; }
+#base16-eldritch .Number { color: #f7c67f; }
+#base16-eldritch .Function { color: #39ddfd; }
+#base16-eldritch .Conditional { color: #a48cf2; }
