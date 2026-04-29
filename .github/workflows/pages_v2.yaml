@@ -1,0 +1,38 @@
+name: Update gallery with latest schemes
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 0 * * *" # https://crontab.guru/every-day
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch the repository code
+        uses: actions/checkout@v4
+
+      - name: Install tinty from source
+        uses: baptiste0928/cargo-install@v3
+        with:
+          crate: tinty
+          git: https://github.com/tinted-theming/tinty
+          branch: main
+
+      - name: Install schemes
+        run: tinty install
+
+      - name: Generate gallery HTML
+        run: tinty gallery --no-open --dump gallery
+
+      - name: "Commit the changes, if any"
+        uses: "stefanzweifel/git-auto-commit-action@be823a7e51f116fecebc222b8307716921375992" # 5.0.1
+        with:
+          commit_message: "Update gallery with recent schemes & latest gallery code [ci]"
+          branch: ${{ github.head_ref }}
+          commit_user_name: "tinted-theming-bot"
+          commit_user_email: "tintedtheming@proton.me"
+          commit_author: "tinted-theming-bot <tintedtheming@proton.me>"
