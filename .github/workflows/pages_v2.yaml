@@ -5,8 +5,6 @@ on:
     - cron: "0 0 * * *" # https://crontab.guru/every-day
   push:
     branches: ["main"]
-  pull_request:
-    branches: ["main"]
 
 jobs:
   build:
@@ -26,13 +24,11 @@ jobs:
         run: tinty install
 
       - name: Generate gallery HTML
-        run: tinty gallery --no-open --dump docs
+        run: tinty gallery --no-open --dump gallery
 
-      - name: "Commit the changes, if any"
-        uses: "stefanzweifel/git-auto-commit-action@be823a7e51f116fecebc222b8307716921375992" # 5.0.1
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          commit_message: "Update gallery with recent schemes & latest gallery code [ci]"
-          branch: ${{ github.head_ref }}
-          commit_user_name: "tinted-theming-bot"
-          commit_user_email: "tintedtheming@proton.me"
-          commit_author: "tinted-theming-bot <tintedtheming@proton.me>"
+          github_token: ${{ secrets.BOT_ACCESS_TOKEN }}
+          publish_dir: ./gallery
+
