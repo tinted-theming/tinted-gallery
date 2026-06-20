@@ -196,57 +196,57 @@
 
   <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
 
-  <template id="snippet-rust"><span class="keyword">use</span> tinty::{<span class="type">Scheme</span>, <span class="type">Theme</span>};
+  <template id="snippet-rust"><span class="include">use</span> <span class="namespace">tinty</span><span class="punctuation">::</span>{<span class="type">Scheme</span><span class="punctuation">,</span> <span class="type">Theme</span>}<span class="punctuation">;</span>
 
 <span class="comment">// load and apply a color scheme</span>
-<span class="keyword">fn</span> <span class="function">apply</span>(<span class="parameter">name</span>: &amp;<span class="type">str</span>) -&gt; <span class="type">Option</span>&lt;<span class="type">Theme</span>&gt; {
-    <span class="keyword">let</span> scheme = <span class="type">Scheme</span>::<span class="function">load</span>(<span class="parameter">name</span>)?;
-    <span class="keyword">let</span> theme = scheme.<span class="function">with_base</span>(<span class="number">16</span>).<span class="function">build</span>();
-    theme.<span class="function">apply</span>();
-    <span class="builtin">println!</span>(<span class="string">"applied: {}"</span>, theme.<span class="function">name</span>());
-    <span class="type">Some</span>(theme)
+<span class="keyword">fn</span> <span class="function">apply</span>(name<span class="punctuation">:</span> &amp;<span class="type">str</span>) <span class="punctuation">-&gt;</span> <span class="type">Option</span>&lt;<span class="type">Theme</span>&gt; {
+    <span class="keyword">let</span> scheme = <span class="type">Scheme</span><span class="punctuation">::</span><span class="function">load</span>(name)?<span class="punctuation">;</span>
+    <span class="keyword">let</span> theme = scheme<span class="punctuation">.</span><span class="function">with_base</span>(<span class="number">16</span>)<span class="punctuation">.</span><span class="function">build</span>()<span class="punctuation">;</span>
+    theme<span class="punctuation">.</span><span class="function">apply</span>()<span class="punctuation">;</span>
+    <span class="macro">println!</span>(<span class="string">"applied: {}"</span><span class="punctuation">,</span> theme<span class="punctuation">.</span><span class="function">name</span>())<span class="punctuation">;</span>
+    <span class="number">Some</span>(theme)
 }</template>
-<template id="snippet-kotlin"><span class="keyword">import</span> tinty.<span class="type">Scheme</span>
+<template id="snippet-kotlin"><span class="include">import</span> tinty.Scheme
 
 <span class="comment">// load and apply a color scheme</span>
-<span class="keyword">fun</span> <span class="function">apply</span>(<span class="parameter">name</span>: <span class="type">String</span>) = <span class="builtin">runCatching</span> {
-    <span class="keyword">val</span> theme = <span class="type">Scheme</span>.<span class="function">load</span>(<span class="parameter">name</span>)
-        .<span class="function">withBase</span>(<span class="number">16</span>)
-        .<span class="function">build</span>()
-    theme.<span class="function">apply</span>()
-    <span class="builtin">println</span>(<span class="string">"applied: ${theme.name}"</span>)
+<span class="keyword">fun</span> <span class="function">apply</span>(name<span class="punctuation">:</span> <span class="type">String</span>) = <span class="function">runCatching</span> {
+    <span class="keyword">val</span> theme = Scheme<span class="punctuation">.</span><span class="function">load</span>(name)
+        <span class="punctuation">.</span><span class="function">withBase</span>(<span class="number">16</span>)
+        <span class="punctuation">.</span><span class="function">build</span>()
+    theme<span class="punctuation">.</span><span class="function">apply</span>()
+    <span class="function">println</span>(<span class="string">"applied:</span> <span class="punctuation">${</span>theme<span class="punctuation">.</span>name<span class="punctuation">}</span><span class="string">"</span>)
 }</template>
 <template id="snippet-lisp"><span class="comment">;; load and apply a color scheme</span>
-(<span class="keyword">defpackage</span> <span class="string">:tinty</span> (:use :cl))
+(<span class="function">defpackage</span> <span class="punctuation">:</span><span class="string">tinty</span> (<span class="punctuation">:</span><span class="string">use</span> <span class="punctuation">:</span><span class="string">cl</span>))
 
-(<span class="keyword">defun</span> <span class="function">apply-scheme</span> (<span class="parameter">name</span>)
-  (<span class="keyword">let*</span> ((scheme (<span class="function">scheme:load</span> <span class="parameter">name</span>))
-         (theme (<span class="function">scheme:build</span> scheme :base <span class="number">16</span>)))
-    (<span class="function">theme:apply</span> theme)
-    (<span class="builtin">format</span> t <span class="string">"applied: ~a~%"</span>
-      (<span class="function">theme:name</span> theme))))</template>
-<template id="snippet-elixir"><span class="keyword">defmodule</span> <span class="type">Tinty</span> <span class="keyword">do</span>
+(<span class="macro">defun</span> <span class="function">apply-scheme</span> (name)
+  (<span class="function">let*</span> ((scheme (<span class="namespace">scheme</span><span class="punctuation">:</span>load name))
+         (theme (<span class="namespace">scheme</span><span class="punctuation">:</span>build scheme <span class="punctuation">:</span><span class="string">base</span> <span class="number">16</span>)))
+    (<span class="namespace">theme</span><span class="punctuation">:</span>apply theme)
+    (<span class="function">format</span> <span class="number">t</span> <span class="string">"applied:</span> <span class="escape">~a~%</span><span class="string">"</span>
+      (<span class="namespace">theme</span><span class="punctuation">:</span>name theme))))</template>
+<template id="snippet-elixir"><span class="keyword">defmodule</span> <span class="namespace">Tinty</span> <span class="keyword">do</span>
   <span class="comment"># load and apply a color scheme</span>
-  <span class="keyword">def</span> <span class="function">apply</span>(<span class="parameter">name</span>) <span class="keyword">do</span>
-    {<span class="string">:ok</span>, theme} =
-      <span class="parameter">name</span>
-      |&gt; <span class="type">Scheme</span>.<span class="function">load</span>()
-      |&gt; <span class="type">Theme</span>.<span class="function">build</span>(base: <span class="number">16</span>)
-    <span class="type">IO</span>.<span class="builtin">puts</span>(<span class="string">"applied: #{theme.name}"</span>)
+  <span class="keyword">def</span> <span class="function">apply</span>(name) <span class="keyword">do</span>
+    {<span class="string">:ok</span><span class="punctuation">,</span> theme} =
+      name
+      |&gt; <span class="namespace">Scheme</span>.<span class="function">load</span>()
+      |&gt; <span class="namespace">Theme</span>.<span class="function">build</span>(<span class="string">base:</span> <span class="number">16</span>)
+    <span class="namespace">IO</span>.<span class="function">puts</span>(<span class="string">"applied: #{</span>theme.name<span class="string">}"</span>)
     theme
   <span class="keyword">end</span>
 <span class="keyword">end</span></template>
-<template id="snippet-haskell"><span class="keyword">import</span> <span class="type">Tinty</span> (<span class="type">Scheme</span>, <span class="type">Theme</span>)
+<template id="snippet-haskell"><span class="include">import</span> <span class="namespace">Tinty</span> (<span class="type">Scheme</span><span class="punctuation">,</span> <span class="type">Theme</span>)
 
 <span class="comment">-- load and apply a color scheme</span>
-<span class="function">apply</span> :: <span class="type">String</span> -&gt; <span class="type">IO</span> ()
-<span class="function">apply</span> <span class="parameter">name</span> = <span class="keyword">do</span>
-  scheme &lt;- <span class="function">loadScheme</span> <span class="parameter">name</span>
+<span class="function">apply</span> :: <span class="type">String</span> -&gt; <span class="type">IO</span> <span class="type">()</span>
+<span class="function">apply</span> name = <span class="keyword">do</span>
+  scheme &lt;- <span class="function">loadScheme</span> name
   <span class="keyword">let</span> theme = <span class="function">buildWith</span> scheme <span class="number">16</span>
   <span class="function">applyTheme</span> theme
-  <span class="builtin">putStrLn</span> (<span class="string">"applied: "</span> ++ <span class="function">themeName</span> theme)</template>
+  <span class="function">putStrLn</span> (<span class="string">"applied: "</span> ++ <span class="function">themeName</span> theme)</template>
 <template id="snippet-diff"><span class="comment">diff --git a/apply.rs b/apply.rs</span>
-<span class="diff-del">--- a/apply.rs</span><span class="diff-add">+++ b/apply.rs</span><span class="function">@@ -3,7 +3,9 @@ use tinty;</span>
+<span class="diff-del">--- a/apply.rs</span><span class="diff-add">+++ b/apply.rs</span><span class="type">@@ -3,7 +3,9 @@ use tinty;</span>
 
 <span class="diff-del">-fn apply(name: &amp;str) {
 -    let colors = 8;</span><span class="diff-add">+fn apply(name: &amp;str) -&gt; Theme {
